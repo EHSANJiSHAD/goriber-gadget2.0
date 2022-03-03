@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goriber Gadget</title>
+
+    <!-- bootstrap css styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- css style link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome kit  -->
+    <script src="https://kit.fontawesome.com/745fb418cf.js" crossorigin="anonymous"></script>
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <h2 class="header" id="top">GORIBER GADGET</h2>
+        <h6 class="mt-3 below-header-text text-center">GET YOUR DESIRED PHONE</h6>
+    </header>
+
+
+    <!-- search section starts  -->
+    <section class="container d-flex  justify-content-center mt-5 ">
+
+        <div class="search-box mb-5">
+            <input id="input-field" type="text" placeholder="SEARCH...">
+            <button id="search-btn" onclick="searchData()"><i class="fas fa-search"></i></button>
+        </div>
+
+    </section>
+    <!-- search section ends  -->
+
+
+    <!-- detailed element starts-->
+    <section>
+        
+        <div>
+            <h4 class="below-header-text fs-6 text-center mt-5" id="no-result-text">No result found...</h4>
+            <h4 class="below-header-text fs-6 text-center mt-5" id="please-type-text">Please type something...</h4>
+        </div>
+
+        <div id="detail-card"
+            class="card mb-3 mt-5 card-design position-relative start-50 translate-middle-x card-details"
+            style="max-width: 540px;">
+
+        </div>
+
+    </section>
+    <!-- detailed element ends-->
+
+
+
+    <section>
+        <!-- searched items starts-->
+
+        <div id="cards" class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4 m-5">
+
+        </div>
+
+    </section>
+    <div>
+        <small id="see-more-btn" onclick="displayMoreItems()"
+            class="btn position-relative start-50 translate-middle-x mb-4 fs-5">SEE MORE▼</small>
+    </div>
+
+     <!-- searched items ends-->
+
+    <!-- spinner starts-->
+    <div id="loader" class="spinner  position-relative start-50  translate-middle-x">
+        <div></div>
+        <div></div>
+    </div>
+    <!-- spinner ends-->
+
+
+    <!-- bootstrap js script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- js script -->
+    <script src="js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>
